@@ -270,11 +270,11 @@
 
 #----------------- Python Dictionaries -----------------
 
-my_cat = {
-    'size': 'fat',
-    'color': 'gray',
-    'disposition': 'loud'
-}
+# my_cat = {
+#     'size': 'fat',
+#     'color': 'gray',
+#     'disposition': 'loud'
+# }
 
 
 ##############   Set key, value using subscript operator []
@@ -367,8 +367,8 @@ my_cat = {
 #------------------------------- comperhensions ---------------------
 
 
-names = ['Charles', 'Susan', 'Patrick', 'George']
-new_list =[]
+# names = ['Charles', 'Susan', 'Patrick', 'George']
+# new_list =[]
 
 # new_list = [name for name in names]
 # print(new_list)
@@ -475,8 +475,79 @@ new_list =[]
 # fruits.replace("apple", "orange", 1)
 
 
+#----------------------- Python Exception Handling---------------------
 
-#--------------------------- class ----------------#
+# def divide(dividend,divisor):
+#     try:
+#         print(dividend / divisor)
+#     except ZeroDivisionError:
+#         print('you can not divide by 0')
+#     finally:
+#         print('execution finished')
+
+# divide(3,4)
+
+
+
+
+#--------------------------- Python Decoratory ---------------
+
+# def log_function(func):
+#     def wrapper(*args, **kwargs):
+#         print(f"Calling {func.__name__}")
+#         result = func(*args, **kwargs)
+#         print(f"{func.__name__} returned {result}")
+#         return result
+#     return wrapper
+
+# @log_function
+# def add(a, b):
+#     return a + b
+
+# add(2, 3)
+
+
+#--------------------------- Decorators -----------------
+# def myfunction(func):
+#     def wrapper():
+#         print(f'Calling function {func.__name__}')
+#         func()
+#         print(f'finished calling {func.__name__}')
+#     return wrapper
+# @myfunction
+# def say_hello():
+#     print('hello')
+
+# say_hello()
+
+
+
+#--------------------------- generators ---------------
+# def my_generator():
+#     yield 1
+#     yield 2
+#     yield 3
+
+# # Create a generator object
+# gen = my_generator()
+
+# # Iterate over the generator
+# for value in gen:
+#     print(value)
+
+# gen = my_generator()
+# print(next(gen))  # 1
+# print(next(gen))  # 2
+# print(next(gen))  # 3
+
+
+#--------------------- Context manager -------------
+
+# with open('example.txt', 'w') as file:
+#     file.write('Hello, World!')
+
+
+#--------------------------- class --------------------
 
 # class User:
 #     def __init__(self,data):
@@ -515,23 +586,123 @@ new_list =[]
 
 # print(products.owner)
 
+##########################  inheritance 
+
+# class User:
+#     def __init__(self,data):
+#         self.name = data['name']
+#         self.email = data['email']
+
+# class Admin(User):
+#     def __str__(self):
+#         return f"{self.name}"
 
 
-#----------------------- abstractions -----------------#
-from abc import ABC,abstractmethod
-
-class Animal(ABC):
-    @abstractmethod
-    def make_sound(self):
-        pass
-
-
-class Dog(Animal):
-    def test(self,data):
-        return 'ddd'
+# user = Admin({'name':'ahmad','email':'ahmad12@gmail.com'})
+# print(user)
+        
     
 
-class Cat(Animal):
-    def test(self,data):
-        return 'howw'
+########################## abstractions 
+# from abc import ABC,abstractmethod
 
+# class Animal(ABC):
+#     @abstractmethod
+#     def make_sound(self):
+#         print('woof')
+
+
+# class Dog(Animal):
+#     def test(self,data):
+#         return 'ddd'
+
+#     def make_sound(self):
+#         return super().make_sound()
+    
+
+# class Cat(Animal):
+#     def test(self,data):
+#         return 'howw'
+#     def make_sound(self):
+#         return super().make_sound()
+
+# d = Cat().make_sound()
+# print(d)
+
+######################## Encapsulation 
+
+
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner = owner
+#         self.__balance = balance  # Private attribute
+
+#     def deposit(self, amount):
+#         if amount > 0:
+#             self.__balance += amount
+#             return f"Deposited {amount}. New balance: {self.__balance}"
+#         return "Invalid amount."
+
+#     def get_balance(self):  # Public method to access private attribute
+#         return self.__balance
+
+# # Usage
+# account = BankAccount("Alice", 1000)
+# print(account.deposit(500))  
+# print(account.get_balance()) 
+
+
+######################### polymorphism
+
+# class Animal:
+#     def speak(self):
+#         pass
+
+# class Dog(Animal):
+#     def speak(self):
+#         return "Woof!"
+
+# class Cat(Animal):
+#     def speak(self):
+#         return "Meow!"
+
+# # Polymorphism in action
+# animals = [Dog(), Cat()]
+# for animal in animals:
+#     print(animal.speak())  # Outputs: Woof! then Meow!
+
+
+
+############################ practicing decorator
+# def my_function(func):
+#     def wrapper(*args,**kwargs):
+#         print(f'{func.__name__} is running')
+#         result = func(*args,**kwargs)
+#         return result
+
+#     return wrapper
+
+
+# class MyClass:
+#     @my_function
+#     def myMethod(self,num1,num2):
+#         return num1 + num2
+
+
+# myclass = MyClass()
+
+# myclass.myMethod(1,3)
+#############################  reading file
+# def my_file():
+#     try:
+#         with open('odoo_prep.docx', 'r') as file:
+#             content = file.read()
+#             print(content)
+#     except FileNotFoundError:
+#         print("Error: The file 'odoo_prep.txt' was not found.")
+#     except PermissionError:
+#         print("Error: Permission denied when accessing 'odoo_prep.txt'.")
+#     except Exception as e:
+#         print(f"An unexpected error occurred: {e}")
+
+# my_file()
