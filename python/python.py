@@ -150,9 +150,9 @@
 # print(sorted(furniture))
 
 
-# text = "hello world"
-# words = text.split()
-# print(words)
+text = "hello world"
+words = text.split()
+print(words)
 
 
 # line = "name:age:location"
