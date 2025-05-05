@@ -706,3 +706,8 @@ print(words)
 #         print(f"An unexpected error occurred: {e}")
 
 # my_file()
+
+
+
+my_list = [1,3,4,2]
+print(my_list[-1])
