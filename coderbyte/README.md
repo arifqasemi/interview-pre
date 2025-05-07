@@ -1,4 +1,6 @@
-https://github.com/Hardanish-Singh/CoderByte-Challenges-Solutions/
+https://github.com/Vanguard90/coderbyte
+
+#################### coderbyte challenges 
 
 
 Consecutive
@@ -15,9 +17,37 @@ Word Split
 Min Window Substring
 Prime Time
 Bracket Combinations
-Angular Tic Tac Toe
-Shortest Path
-Optimal Assignments
-Transitivity Relations
 FizzBuzz
 CheckNums
+
+
+
+#################### coderbyte challenges 
+
+Time Convert
+Alphabet Soup
+Kaprekar Constant
+Ex Oh
+Word Count
+Pentagonal Number
+String Reduction
+Array Matching
+Division
+String Periods
+Palindrome Creator
+Food Distribution
+
+
+################### coderbyte challenges 
+
+Letter Count
+Simple Symbols
+Arith Geo
+String Scramble
+Bitwise One
+Permutation Step
+Swap II
+Number Encoding
+Pattern Chaser
+Matrix Spiral
+Prime Mover
