@@ -150,9 +150,9 @@
 # print(sorted(furniture))
 
 
-text = "hello world"
-words = text.split()
-print(words)
+# text = "hello world"
+# words = text.split()
+# print(words)
 
 
 # line = "name:age:location"
@@ -523,6 +523,13 @@ print(words)
 
 
 #--------------------------- generators ---------------
+# yield is used in generator functions to provide a sequence  
+# of values over time. When yield is executed, it pauses the 
+# function, returns the current value and retains the state 
+# of the function. This allows the function to continue from 
+# the same point when called again, making it ideal for generating
+# large or complex sequences efficiently
+
 # def my_generator():
 #     yield 1
 #     yield 2
@@ -709,5 +716,5 @@ print(words)
 
 
 
-my_list = [1,3,4,2]
-print(my_list[-1])
+# my_list = [1,3,4,2]
+# print(my_list[-1])
