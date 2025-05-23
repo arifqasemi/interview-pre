@@ -1,28 +1,23 @@
-def findEvenNumber(num):
-    while num >= 1:
-        if num == 1:
-            return True
-        num = num / 2
-    
+def findOddNumer(num):
+    if num % 2 !=0:
+        return True
+
     return False
         
 
 
-def dashInsert(strArr):
-    stack = []
-    result = []
-    for n in strArr:
-        if findEvenNumber(int(n)):
-            result.append(n)
-            stack.append(n)
-        elif not findEvenNumber(int(n)):
-            top = stack.pop() if stack else None
-            if top and not findEvenNumber(int(top)):
-                result.append('-')
-            result.append(n)
-            stack.append(n)
-    return ''.join(result)
+def dashInsert(nums):
+    stack = [nums[0]]
+    for i in nums:
+        if findOddNumer(int(stack[-1])):
+            stack.append('-')
+            stack.append(i)
+        else:
+            stack.append(i)
+    print(stack)
+
         
+# print(findOddNumer(8))
 print(dashInsert('454793'))
         
     

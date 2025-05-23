@@ -3,4 +3,4 @@ def NumberEncoding(strArr):
     print(list1)
     
     
-NumberEncoding('c')
+NumberEncoding('C')

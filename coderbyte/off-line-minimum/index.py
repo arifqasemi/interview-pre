@@ -1,14 +1,13 @@
 def OffLineMinimum(strArr):
-    pool = []
+    stack = []
     result = []
-
-    for s in strArr:
-        if s == "E":
-            if pool:
-                smallest = min(pool)
-                result.append(smallest)
-                pool.remove(smallest)
+    for i in strArr:
+        if i =="E":
+            min_num = min(stack)
+            result.append(min_num)
+            stack.remove(min_num)
         else:
-            pool.append(int(s))
-    
+            stack.append(int(i))
     return result
+    
+print(OffLineMinimum(["5","4","6","E","1","7","E","E","3","2"]))

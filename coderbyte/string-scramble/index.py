@@ -9,9 +9,9 @@ def StringScramble(str1, str2):
     for char in inner_string:
         if char not in outer_string:
             return False
-        print(char)
         updated_outer = outer_string.replace(char, "", 1)
         outer_string = updated_outer
+        print(outer_string)
     return True
 
 print(StringScramble('rkqodlw','world'))

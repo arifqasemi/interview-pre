@@ -5,7 +5,6 @@ def insertionSort(arr):
         while left >= 0 and arr[left] > current:
             arr[left + 1] = arr[left]
             left -= 1
-        print(arr, left, current)
         
         arr[left +1] = current
 

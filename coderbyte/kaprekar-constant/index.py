@@ -14,16 +14,15 @@
 # Assumes number with 4 digits given
 
 def kaprekarConstant(nums):
+    
     count = 0
     while nums !=6174:
         asc = int(''.join(sorted(str(nums))))
-        desc = int(''.join(sorted(str(nums),reverse=True)))
-        nums = desc -asc
+        dsc = int(''.join(sorted(str(nums),reverse=True)))
+        nums = abs(asc - dsc)
         count +=1
-        if nums ==0:
-            return -1
-    return count
         
+    return count
     
 
 print(kaprekarConstant(5432))

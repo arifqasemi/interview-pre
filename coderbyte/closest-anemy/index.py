@@ -2,7 +2,13 @@ def ClosestEnemyII(strArr):
     # Step 1: Parse the grid
     M = len(strArr)  # Number of rows
     N = len(strArr[0])  # Number of columns
-    print(strArr)
+    space = 0
+    for i in range(len(strArr)):
+        for k in range(1,len(strArr)):
+            if '1' in strArr[i]  and '2' in strArr[k]:
+                print(strArr[i],strArr[k])
+                return abs(i -k)
+            
     # player = None
     # enemies = []
 
@@ -31,6 +37,6 @@ def ClosestEnemyII(strArr):
     # return min_distance
 
 # Test cases
-print(ClosestEnemyII(["0000", "1000", "0002", "0002"]))  # Output: 1
+# print(ClosestEnemyII(["0000", "1000", "0002", "0002"]))  # Output: 1
 # print(ClosestEnemyII(["000", "100", "200"]))  # Output: 1
-# print(ClosestEnemyII(["0000", "2010", "0000", "2002"]))  # Output: 2
+print(ClosestEnemyII(["0000", "2010", "0000", "2002"]))  # Output: 2

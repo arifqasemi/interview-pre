@@ -1,13 +1,14 @@
 def numberAddition(strArr):
-    for n in range(len(strArr)):
-        if strArr[n].isalpha():
-            strArr =strArr.replace(strArr[n],' ')
-    list1 = strArr.split(' ')
-    new_list = []
-    for k in list1:
+    result = 0
+    for i in range(len(strArr)):
+        if strArr[i].isalpha():
+            strArr = strArr.replace(strArr[i],' ')
+    strArr = strArr.split(' ')
+    for k in strArr:
         if k.isdigit():
-            new_list.append(int(k))
-    return sum(new_list)
+            result +=int(k)
+    return result
+
     
             
 print(numberAddition('88Hello 3World!'))

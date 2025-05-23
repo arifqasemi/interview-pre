@@ -4,7 +4,6 @@ def countWays(ranges):
     max_end = -1
 
     for start, end in ranges:
-        print(start,end)
         if start > max_end:
             count += 1
         max_end = max(max_end, end)
