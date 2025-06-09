@@ -4,6 +4,7 @@ def StringZigZag(strArr, num):
     going_down = False  # start going down
 
     for n in strArr:
+        print(current_row)
         rowsNum[current_row] +=n
         if going_down:
             if current_row !=0:
