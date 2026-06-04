@@ -42,6 +42,7 @@ range
 
 1. Is it about a contiguous subarray or substring?
 Yes → Sliding Window
+2. If the problem says positive integers, Sliding Window is usually a great candidate.
 
 
 #### Stack ###
@@ -73,6 +74,11 @@ Insert position
 Rotated sorted array
 Peak element
 Find minimum in rotated array
+Find target	Binary Search
+Find index	Binary Search
+Find position	Binary Search
+Insert position	Binary Search
+First/last occurrence
 ####### Binary Search on Answer #########
 ####. minimum possible
 ####. maximum possible
@@ -90,6 +96,7 @@ Sort array
 Count inversions
 Count reverse pairs
 Need O(n log n) sorting
+count pairs
 6. Does it mention sorting, inversions, or divide-and-conquer?
 Yes → Merge Sort
 

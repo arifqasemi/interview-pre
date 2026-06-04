@@ -1,24 +1,21 @@
 #### try to give your own custom name for the variable at the time of solving prob 
 
 
-####### Binary Search ########
-#### Can I eliminate half the search space?
-
-####### Sliding Window ########
-
-#### Is there a window that becomes valid/invalid?
-
-####### Stack ########
-#### Does the top element help me decide the next step?
-
-####### Two Pointers ########
-
-#### Can the relationship between two positions help me improve the answer?
-
-####### Hash Map ########
-#### Do I need to remember information I've already seen so I can look it up quickly later?
-#### How many times has each character appeared?
-
 
 ########## Merge Sort ########
 ### Can I solve this problem by dividing it into smaller subproblems and then combining the results?
+
+
+
+### you can' detect the algo based on the data if it is hash map or two pointers
+### biggest hint for two pointers and hash map is sorted and not sorted
+
+### what i have found so far!
+
+| Pattern        | What is being compared?               |
+| -------------- | ------------------------------------- |
+| Two Pointers   | Element ↔ Element                     |
+| Binary Search  | Target ↔ Element                      |
+| Sliding Window | Window ↔ Constraint                   |
+| Hash Map       | Element ↔ History                     |
+| Stack          | Element ↔ Previous unresolved element |

@@ -40,4 +40,4 @@ def sortArray(nums: List[int]) -> List[int]:
 
 
 
-print(sortArray([2,0,2,1,1,0]))
+print(sortArray([5, 2, 8, 1, 9]))
