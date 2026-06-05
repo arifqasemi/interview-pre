@@ -1,0 +1,5 @@
+Maximum Average Subarray I (#643)
+Longest Substring Without Repeating Characters (#3)
+Permutation in String (#567)
+Longest Repeating Character Replacement (#424)
+Minimum Window Substring (#76)
