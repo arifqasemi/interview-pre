@@ -12,10 +12,14 @@
 
 ### what i have found so far!
 
-| Pattern        | What is being compared?               |
-| -------------- | ------------------------------------- |
-| Two Pointers   | Element ↔ Element                     |
-| Binary Search  | Target ↔ Element                      |
-| Sliding Window | Window ↔ Constraint                   |
-| Hash Map       | Element ↔ History                     |
-| Stack          | Element ↔ Previous unresolved element |
+| Pattern        | Core Relationship                        |
+| -------------- | ---------------------------------------- |
+| Two Pointers   | Element ↔ Element                        |
+| Binary Search  | Target ↔ Element                         |
+| Sliding Window | Window ↔ Constraint                      |
+| Hash Map       | Element ↔ History                        |
+| Stack          | Element ↔ Most Recent Unresolved Element |
+| Heap           | Element ↔ Extreme Priority               |
+| Merge Sort     |  Sorted Half ↔ Sorted Half               |
+
+
